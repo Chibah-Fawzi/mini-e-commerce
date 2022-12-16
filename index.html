@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form onsubmit="addProduct(event)">
+        <div>
+            <label>Nom</label>
+            <input required id="nom" type="text">
+        </div>
+        <div>
+            <label>Prix</label>
+            <input required id="prix" type="number">
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea required id="description"></textarea>
+        </div>
+        <button type="submit">Ajouter un produit</button>
+    </form>
+
+    <section id="products">
+    </section>
+
+    <style>
+        #products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #product {
+            width: 200px;
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+
+</html>
